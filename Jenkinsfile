@@ -28,7 +28,7 @@ pipeline {
             steps {
                     sh '''
                     cd /home/ubuntu/SimpleFlaskApp
-                    git pull origin main
+                    git pull origin feature/devops-intern
                     sudo systemctl restart flaskapp.service
                     sudo systemctl restart nginx
                     '''
